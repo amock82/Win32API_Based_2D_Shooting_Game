@@ -4,8 +4,13 @@
 #include "framework.h"
 #include "Win32API게임실습.h"
 
-#define MAX_LOADSTRING 100
+// freetype 헤더
+#include <ft2build.h>
+#include FT_FREETYPE_H
 
+#pragma comment (lib, "freetype.lib")
+
+#define MAX_LOADSTRING 100
 
 // 전역 변수:
 HINSTANCE hInst;                                // 현재 인스턴스입니다.
@@ -31,6 +36,18 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     START_DEBUG_CONSOLE();
     cout << "디버그 콘솔창 시작하기" << endl;
   
+    // freetype 테스트
+    FT_Library library;
+
+    if (FT_Init_FreeType(&library) == 0)
+    {
+        cout << "폰트라이브러리 초기화 성공" << endl;
+    }
+    else
+    {
+        cout << "폰트라이브러리 초기화 실패" << endl;
+    }
+
     // 전역 문자열을 초기화합니다.
     LoadStringW(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);
     LoadStringW(hInstance, IDC_WIN32API, szWindowClass, MAX_LOADSTRING);
