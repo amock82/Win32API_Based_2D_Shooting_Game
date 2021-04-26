@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\1.엔진">
+      <UniqueIdentifier>{753b4f36-c62c-4f82-8550-26e71836e786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\2.오브젝트">
+      <UniqueIdentifier>{6582ab60-b66d-470f-94ce-e287d17695af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\3.UI">
+      <UniqueIdentifier>{d6178e9a-efd4-4429-95e2-f81bb4121a60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\4.씬">
+      <UniqueIdentifier>{24644bc2-be8a-481f-8dea-5c0bcbbf6464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\5.어플리케이션">
+      <UniqueIdentifier>{8b6af136-d5d2-4401-8be7-df11968d6400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\1.엔진">
+      <UniqueIdentifier>{1f650d9c-7b33-48bc-8cf0-44279e191431}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\2.오브젝트">
+      <UniqueIdentifier>{d21e63aa-8acb-48b5-ba20-222fc6caffb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\3.UI">
+      <UniqueIdentifier>{b5d994ec-7639-482e-a9e1-48cc8dfbdd7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\4.씬">
+      <UniqueIdentifier>{1ee37793-cbf1-46e8-8f1e-83417e2e8c92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\5.어플리케이션">
+      <UniqueIdentifier>{52941eeb-f1c3-49db-8159-845de5d40c92}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h">
+      <Filter>헤더 파일\1.엔진</Filter>
+    </ClInclude>
+    <ClInclude Include="Ayako.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="BMP.h">
+      <Filter>헤더 파일\1.엔진</Filter>
+    </ClInclude>
+    <ClInclude Include="BombExp.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxCollider2D.h">
+      <Filter>헤더 파일\1.엔진</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>헤더 파일\1.엔진</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyLaser.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyManager.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="GameBG.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>헤더 파일\1.엔진</Filter>
+    </ClInclude>
+    <ClInclude Include="graphic.h">
+      <Filter>헤더 파일\1.엔진</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>헤더 파일\1.엔진</Filter>
+    </ClInclude>
+    <ClInclude Include="LaserExp.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>헤더 파일\5.어플리케이션</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>헤더 파일\1.엔진</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPool.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerBomb.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerLaser.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>헤더 파일\1.엔진</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일\5.어플리케이션</Filter>
+    </ClInclude>
+    <ClInclude Include="Shield.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="ShipExp.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>헤더 파일\1.엔진</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일\5.어플리케이션</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>헤더 파일\1.엔진</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32API게임실습.h">
+      <Filter>헤더 파일\5.어플리케이션</Filter>
+    </ClInclude>
+    <ClInclude Include="Stealth.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="GuidLaser.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="Shooter.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="Propeller.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="Wing.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="BossGun.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="WingGun.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="Radar.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="BossChildExp.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="DeadBoss.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="ReturnPlayer.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="LaserItem.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="BombItem.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOver.h">
+      <Filter>헤더 파일\3.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerIcon.h">
+      <Filter>헤더 파일\3.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="HPBar.h">
+      <Filter>헤더 파일\3.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="BombIcon.h">
+      <Filter>헤더 파일\3.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>헤더 파일\3.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="BTNExit.h">
+      <Filter>헤더 파일\3.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="BTNPause.h">
+      <Filter>헤더 파일\3.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>헤더 파일\1.엔진</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>헤더 파일\3.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>헤더 파일\4.씬</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
+      <Filter>헤더 파일\4.씬</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>헤더 파일\4.씬</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleBG.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>헤더 파일\4.씬</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleMenu.h">
+      <Filter>헤더 파일\3.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="EndingScene.h">
+      <Filter>헤더 파일\4.씬</Filter>
+    </ClInclude>
+    <ClInclude Include="EndingBG.h">
+      <Filter>헤더 파일\2.오브젝트</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Animation.cpp">
+      <Filter>소스 파일\1.엔진</Filter>
+    </ClCompile>
+    <ClCompile Include="Ayako.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="BMP.cpp">
+      <Filter>소스 파일\1.엔진</Filter>
+    </ClCompile>
+    <ClCompile Include="BombExp.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxCollider2D.cpp">
+      <Filter>소스 파일\1.엔진</Filter>
+    </ClCompile>
+    <ClCompile Include="debug.cpp">
+      <Filter>소스 파일\1.엔진</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyLaser.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyManager.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="GameBG.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>소스 파일\1.엔진</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic.cpp">
+      <Filter>소스 파일\1.엔진</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>소스 파일\1.엔진</Filter>
+    </ClCompile>
+    <ClCompile Include="LaserExp.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>소스 파일\1.엔진</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectPool.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerBomb.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerLaser.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>소스 파일\1.엔진</Filter>
+    </ClCompile>
+    <ClCompile Include="Shield.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="ShipExp.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>소스 파일\1.엔진</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32API게임실습.cpp">
+      <Filter>소스 파일\5.어플리케이션</Filter>
+    </ClCompile>
+    <ClCompile Include="Stealth.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="GuidLaser.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="Shooter.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="Propeller.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="Wing.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="BossGun.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="WingGun.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="Radar.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="BossChildExp.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="DeadBoss.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>소스 파일\1.엔진</Filter>
+    </ClCompile>
+    <ClCompile Include="ReturnPlayer.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="LaserItem.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="BombItem.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOver.cpp">
+      <Filter>소스 파일\3.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerIcon.cpp">
+      <Filter>소스 파일\3.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="HPBar.cpp">
+      <Filter>소스 파일\3.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="BombIcon.cpp">
+      <Filter>소스 파일\3.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>소스 파일\3.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="BTNExit.cpp">
+      <Filter>소스 파일\3.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="BTNPause.cpp">
+      <Filter>소스 파일\3.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>소스 파일\1.엔진</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>소스 파일\3.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>소스 파일\4.씬</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>소스 파일\4.씬</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>소스 파일\4.씬</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleBG.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>소스 파일\4.씬</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleMenu.cpp">
+      <Filter>소스 파일\3.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="EndingScene.cpp">
+      <Filter>소스 파일\4.씬</Filter>
+    </ClCompile>
+    <ClCompile Include="EndingBG.cpp">
+      <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Win32API게임실습.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Win32API게임실습.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
