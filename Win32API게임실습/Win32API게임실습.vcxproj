@@ -193,6 +193,7 @@
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="Stealth.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Text.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="TitleBG.h" />
     <ClInclude Include="TitleMenu.h" />
@@ -251,6 +252,7 @@
     <ClCompile Include="Shooter.cpp" />
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="Stealth.cpp" />
+    <ClCompile Include="Text.cpp" />
     <ClCompile Include="Timer.cpp" />
     <ClCompile Include="TitleBG.cpp" />
     <ClCompile Include="TitleMenu.cpp" />

@@ -4,12 +4,6 @@
 #include "framework.h"
 #include "Win32API게임실습.h"
 
-// freetype 헤더
-#include <ft2build.h>
-#include FT_FREETYPE_H
-
-#pragma comment (lib, "freetype.lib")
-
 #define MAX_LOADSTRING 100
 
 // 전역 변수:
@@ -35,56 +29,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     // TODO: 여기에 코드를 입력합니다.
     START_DEBUG_CONSOLE();
     cout << "디버그 콘솔창 시작하기" << endl;
-  
-    // freetype 테스트
-    FT_Library library;
-    FT_Face    face;
-
-    // 폰트 라이브러리 초기화
-    if (FT_Init_FreeType(&library) == 0)
-    {
-        cout << "폰트라이브러리 초기화 성공" << endl;
-    }
-    else
-    {
-        cout << "폰트라이브러리 초기화 실패" << endl;
-    }
-
-    // 폰트 파일 읽어오기
-    if (FT_New_Face(library, "Asset/UI/DungGeunMo.ttf", 0, &face) == 0)
-    {
-        cout << "폰트파일 로드 성공" << endl;
-    }
-    else
-    {
-        cout << "폰트파일 로드 실패" << endl;
-    }
-
-    // 폰트 옵션 (크기 지정하기)
-    FT_Set_Pixel_Sizes(face, 32, 32);   
-
-    // 글자 모양 정보 위치 찾기
-    WCHAR text = L'a';
-
-    int index = FT_Get_Char_Index(face, text);          // text 글자 모양 정보 위치(인덱스) 구하기
-    FT_Load_Glyph(face, index, 0);                      // index 위치에서 해당 글자 정보 로드하기. 로드 위치는 face->glyph
-    FT_Render_Glyph(face->glyph, (FT_Render_Mode)0);    // face->glyph에 로드한 글자정보로 이미지정보 만들기 face->glyph->bitmap
-
-    int width  = face->glyph->bitmap.width; // 이미지 가로크기
-    int height = face->glyph->bitmap.rows;  // 이미지 세로크기
-    unsigned char* buffer = face->glyph->bitmap.buffer;
-
-    // 폰트 출력하기
-    for (int y = 0; y < height; y++)
-    {
-        for (int x = 0; x < width; x++)
-        {
-            unsigned char v = buffer[y * width + x];
-
-            printf("%4d", v);
-        }
-        printf("\n");
-    }
 
     // 전역 문자열을 초기화합니다.
     LoadStringW(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);

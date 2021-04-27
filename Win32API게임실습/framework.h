@@ -73,6 +73,7 @@
 #include "TitleMenu.h"
 #include "EndingScene.h"
 #include "EndingBG.h"
+#include "Text.h"
 
 #define WIDTH  480  //게임화면 가로길이
 #define HEIGHT 800  //게임화면 세로길이

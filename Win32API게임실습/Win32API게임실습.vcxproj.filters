@@ -222,6 +222,9 @@
     <ClInclude Include="EndingBG.h">
       <Filter>헤더 파일\2.오브젝트</Filter>
     </ClInclude>
+    <ClInclude Include="Text.h">
+      <Filter>헤더 파일\3.UI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Animation.cpp">
@@ -391,6 +394,9 @@
     </ClCompile>
     <ClCompile Include="EndingBG.cpp">
       <Filter>소스 파일\2.오브젝트</Filter>
+    </ClCompile>
+    <ClCompile Include="Text.cpp">
+      <Filter>소스 파일\3.UI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
