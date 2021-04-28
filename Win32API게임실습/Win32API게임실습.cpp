@@ -27,7 +27,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     UNREFERENCED_PARAMETER(lpCmdLine);
 
     // TODO: 여기에 코드를 입력합니다.
-    START_DEBUG_CONSOLE();
+    //START_DEBUG_CONSOLE();
     cout << "디버그 콘솔창 시작하기" << endl;
 
     // 전역 문자열을 초기화합니다.

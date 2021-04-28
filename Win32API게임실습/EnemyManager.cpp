@@ -8,7 +8,7 @@ EnemyManager::EnemyManager(float px, float py)
 
 	this->spawnIdx = 0;
 
-	this->state = State::stealthSpawn;
+	this->state = State::ayakoSpawn;
 	this->stealthCount = 3;
 }
 

@@ -3,10 +3,26 @@
 // DLL 사용하기
 #pragma comment (lib, "freetype.lib")
 
-Text::Text(float px, float py) 
+Text::Text(wstring text, int fontSize, unsigned char r, unsigned char g, unsigned char b, float px, float py)
 	: GameObject("UI", "텍스트", true, px, py)
 {
+    this->text = text;
+    this->fontSize = fontSize;
 
+    this->r = r;
+    this->g = g;
+    this->b = b;
+}
+
+Text::Text(wstring text, float px, float py)
+    : GameObject("UI", "텍스트", true, px, py)
+{
+    this->text = text;
+    this->fontSize = 20;
+
+    this->r = 255;
+    this->g = 255;
+    this->b = 255;
 }
 
 Text::~Text()
@@ -30,6 +46,7 @@ void Text::start()
 
     // 폰트 파일 읽어오기
     if (FT_New_Face(library, "Asset/UI/DungGeunMo.ttf", 0, &face) == 0)
+    //if (FT_New_Face(library, "Asset/UI/koverwatch.ttf", 0, &face) == 0)
     {
         cout << "폰트파일 로드 성공" << endl;
     }
@@ -39,7 +56,7 @@ void Text::start()
     }
 
     // 폰트 옵션 (크기 지정하기)
-    FT_Set_Pixel_Sizes(face, 32, 32);
+    FT_Set_Pixel_Sizes(face, fontSize, fontSize);
 }
 
 void Text::update()
@@ -47,16 +64,18 @@ void Text::update()
 
 }
 
+void Text::setText(wstring text)
+{
+    this->text = text;
+}
+
 void Text::draw()
 {
-    // 글자 모양 정보 위치 찾기
-    WCHAR text[] = L"가나다___A,BC";
-
     // 폰트 출력 위치
     float fontx = getPx();
     float fonty = getPy();
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < text.size(); i++)
     {
         int index = FT_Get_Char_Index(face, text[i]);          // text 글자 모양 정보 위치(인덱스) 구하기
         FT_Load_Glyph(face, index, 0);                      // index 위치에서 해당 글자 정보 로드하기. 로드 위치는 face->glyph
@@ -76,11 +95,25 @@ void Text::draw()
             for (int x = 0; x < width; x++)
             {
                 unsigned char v = buffer[y * width + x];
+                
+                float a = v / 255.0f;   // 알파 값
+                
+                // 배경색상
+                unsigned char br, bg, bb;
 
+                getPixel(fontx + x + left, fonty + y - top, br, bg, bb);
+
+                // 알파블렌딩하기
+                unsigned rr = r * a + br * (1 - a);
+                unsigned rg = g * a + bg * (1 - a);
+                unsigned rb = b * a + bb * (1 - a);
+
+                
                 if (v != 0)
                 {
-                    setPixel(fontx + x + left, fonty + y - top, 30, 30, 30);
+                    setPixel(fontx + x + left, fonty + y - top, rr, rg, rb);
                 }
+                
             }
         }
 

@@ -20,4 +20,5 @@ public:
 	virtual void draw();
 
 	void setFillAmount(float fillAmount);
+	void setValue(int value);
 };

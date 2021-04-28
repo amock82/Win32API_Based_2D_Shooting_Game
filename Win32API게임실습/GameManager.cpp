@@ -150,7 +150,9 @@ void GameManager::damagePlayer(float damage)
 void GameManager::showHPBar()
 {
 	HPBar* bar = (HPBar*)playerHPBar;
+
 	bar->setFillAmount(playerHP / 100.0f);
+	bar->setValue(playerHP);
 }
 
 int GameManager::getBombCount()

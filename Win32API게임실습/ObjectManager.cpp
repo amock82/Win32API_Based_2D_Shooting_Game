@@ -1,7 +1,7 @@
 #include "framework.h"
 
 vector<GameObject*> ObjectManager::gameObject[MAX_LAYER];
-bool ObjectManager::isShowGizmo = true;
+bool ObjectManager::isShowGizmo = false;
 
 GameObject* ObjectManager::instantiate(GameObject* obj, int layer)
 {
